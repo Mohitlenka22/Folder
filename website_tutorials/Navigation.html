@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+         #first{
+            margin-left: 150px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            margin-right: 185px;
+            background-color: blue;
+            color: #ffffff;
+            border-radius: 19px;
+            text-decoration: none;
+            padding: 13px 13px;
+            border: 2px solid rgb(214, 144, 13);
+        }
+        #first:hover{
+            background-color: yellowgreen;
+            color: black;
+        }
+        #sec:hover{
+            background-color: yellowgreen;
+            color: black;
+        }
+        #sec{
+            margin-left: 400px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+            margin-right: 150px;
+            background-color: blue;
+            color: #ffffff;
+            border-radius: 19px;
+            text-decoration: none;
+            padding: 13px 13px;
+            border: 2px solid rgb(214, 144, 13);
+        }
+        #a1{
+            background-color:black;
+            border-radius: 14px;
+            padding: 4px 10px;
+
+        }
+        #a1 ul{
+            overflow: auto;
+        }
+    #a1 li{
+        float: left;
+        list-style: none;
+    }
+    #a1 li a{
+        padding: 3px 10px;
+        text-decoration: none;
+        color: white;
+    }
+    #a1 li a:hover{
+        color: blue;
+    }
+    .con{
+        float: right;
+        border: 2px solid none;
+        
+    }
+    #search{
+        border-radius: 14px;
+        margin-left: 14px;  
+    }
+    .con input{
+        padding: 4px 4px;
+    }
+#ali{
+    text-align: center;
+    font-family: 'Gluten', cursive;
+    font-size: 40px
+}
+body{
+    background-image: url('new.jpg');
+    background-size: 1400px;
+    background-repeat: no-repeat;
+    background-position-y:top;
+    background-position-x: left; 
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+      
+      
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="a1">
+            <ul>
+                <li><a href="">HOME </a></li>
+                <li><a href="/result.html">SERVICES</a></li>
+                <li><a href="">ABOUT US </a></li>
+                <li><a href="">CONTACT US</a></li>
+                <div class="con">
+                 <input type="text" name="serach" id="search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h3 id="ali">WELCOME TO MY WEBSITE</h3>
+    <a id="first" href="https://ntaresults.nic.in/resultservices/JEEMain2021auth" target="_blank">Server-1        JEE RESULT</a>
+    <a id="sec"
+      href="/index.html" target="_blank">Server-2  JEE RESULT </a>
+</body>
+</html>

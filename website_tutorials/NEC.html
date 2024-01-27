@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEC(2021)/Webinfo</title>
+    <style>
+        #fir{
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: tomato;
+            color: red;
+            margin-top: -7px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .sec{text-align: center;
+            font-size: x-small;
+            margin-top: -13px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        .navbar ul{
+            display: flex;
+            flex-flow: row wrap;
+            background-color:rgb(226, 235, 241);
+            border-radius: 4px;
+            height: 50px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            box-shadow:  0px 0px 4px gray, 0px 0px 4px gray,0px 0px 4px gray,0px 0px 4px gray;
+        }
+        .navbar ul li{
+            list-style: none;
+            padding: 9px;
+            position: relative;
+            /* left: 23em; */
+        }
+        .navbar ul li a{
+            color: black;
+            text-decoration: none;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover{
+           background-color:  wheat;
+           padding: 6px;
+           border-radius: 6px;
+        }
+        /* .container{
+            display: grid;
+            grid-template-columns: repeat (4, 1fr 2fr 2fr 1fr );
+            grid-gap: 4px;
+            
+        } */
+        .item1{
+            background-color: wheat;
+            border: black;
+        }
+        .item{
+          border: 3px solid yellow;
+          border-radius: 6px;
+          display:block;
+          margin:auto;
+          width: 20%;
+          /* padding: 6px; */
+          /* padding-left: 3em; */
+          padding: 0.5em 2.5em 0.5em 3em;
+          margin-top: 3em;
+        }
+        span{
+            color:white;
+            animation-name: pav;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pav{
+            50%{
+                background-color: white;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        .item a{
+          text-decoration: none;
+          color: gray;
+        
+      }
+       
+    </style>
+</head>
+<body>
+    <h2 id="fir">NECE-2021</h2>
+    <div class="sec">(NATIONAL EXAMINATION CENTRE OF EXCELLENCE)</div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <!-- <li id="nav">NAVBAR>></li> -->
+                <li><a href="">Home</a> </li>
+                <li><a href="">About Us</a>  </li>
+                <li><a href=""> Online Application</a> </li>
+                <li><a href=""> Mock Test</a> </li>
+                <li><a href=""> Contact Us</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="item"><a href=""> Register For NECE(MAIN)-2021 <span>NEW</span></a>  </div>
+    <div class="container">
+ <div class="item1">This is item1</div>
+<div class="item1">This is item2</div>
+<div class="item1">This is item3</div>
+<div class="item1">This is item4</div>
+    </div>
+    
+</body>
+</html>

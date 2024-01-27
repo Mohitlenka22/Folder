@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTCE/WEBINFO-2021</title>
+    <style>
+     .box{
+         color: red;
+         font-weight: bold;
+         /* font-family: 'Bebas Neue', cursive; */
+         font-size: 30px;
+         text-align: center;
+         font-family: 'Gemunu Libre', sans-serif;
+         
+     }
+     @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600;700&display=swap');
+     /* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+
+
+    @media only screen and (max-width:734px) {
+        #box1{margin-top: 6px;
+            display:block;
+            overflow: hidden;    
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .first{
+        text-align: center;
+        font-size: smaller;
+    }
+    .sw{
+        display: flex;
+    }
+    div p {
+        border: 2px solid yellow;
+        height: 200px;
+        width: 45%;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 32px;
+        padding: 12px 12px 12px 12px;
+        font-family: 'Noto Sans', sans-serif;
+        box-shadow:  0px 0px 7px gray, 0px 0px 7px gray, 0px 0px 7px gray, 0px 0px 7px gray;
+    }
+    @media only screen and (max-width:1208px){
+       div p{  border: 2px solid yellow;
+        flex-grow: 3;}
+       } 
+       @media only screen and (min-width:280px) and (max-width:320px){
+       div p{  border: 2px solid yellow;
+               height: 220px;
+              
+        }
+       } 
+    
+    #pavan{ padding: 6px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        width: 115px;
+        margin: auto;
+        position: relative;
+        top: 1.7rem;
+        display: block;
+    }
+    @media only screen and (max-width:280px){
+        #pavan{
+                display: inline-block;}
+           
+        }
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+    .navbar{
+       background-color: rgb(150, 26, 26);
+       width: 100%;
+       height: 60px;
+       margin-top: 14px;
+       /* position: sticky; */
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: center;
+       /* position: fixed;  */
+    }
+    @media only screen and (min-width:218px) and (max-width:768px){
+        .navbar{
+            background-color: rgb(150, 26, 26);
+       width: 100%;
+       height: 85px;
+       margin-top: 14px;
+       display: flex;
+       /* position: fixed;  */
+       flex-flow: row wrap;
+       justify-content: center;
+        }
+    }
+    .navbar ul{
+        overflow: hidden;
+    }
+    .navbar ul li{
+        float: left;
+        list-style: none;
+        padding-top: 10px;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        padding: 8px 8px;
+        color: white;
+        font-family: 'Gemunu Libre', sans-serif;
+   }
+   @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+   .navbar ul li a:hover{
+       background-color: tomato;
+   }
+
+      .container{
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: space-around;
+           align-items: center;
+            
+    }
+    .item{ 
+         margin-top: 120px;
+         display: inline-block;
+          border: 3px solid yellow;
+          /* width:100%; */
+          padding: 6px;
+
+      }
+
+      .last{ color:white;
+          position: relative;
+          top: 20em;
+          background-color: rgb(39, 35, 35);
+          height: 66px;
+          text-align: center;
+          padding-top: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .last:hover{
+          color: blue;
+      }
+      .class{
+            display: inline-block;
+            background-color: red;
+            color: white;
+            position: relative;
+            animation-name: new;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        /* @keyframes new {
+           from{
+               width: 0px;
+               transform: scale(0.5);
+               
+           }
+           to{
+           width: 33px;
+        
+           }
+        } */
+
+
+        @keyframes new {
+         50%{
+            background-color: white;
+            
+         }
+         100%{
+            background-color: red;
+            
+         }
+
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+        #item1 a{
+            text-decoration: none;
+            color: gray;
+        }
+        #item1 a:hover{
+            color: black;
+        }
+        #item2 a{
+            text-decoration: none;
+            color: gray;
+        }
+        #item2 a:hover{
+            color: black;
+        }
+        #ima{
+            width: 135px;
+            /* margin-left: 45px; */
+            float: left;
+            
+        }
+        a .container{display: inline-block;
+                     
+                    }
+        #delay{
+            justify-content: center;align-items:center;border: 2px solid rgb(167, 19, 105);height:35px;display: flex;padding: 14px;width: 50%;margin-left: 300px;
+
+        }            
+    </style>
+</head>
+<body>
+    <!-- <img id="ima" src="/new.jpg" alt="error"> -->
+    <div class="box" id="box1">MTCE-2021 </div> 
+    <div class="first" id="fir1">MOCK TEST CENTRE FOR ENG..</div>
+    <header>
+        <nav class="navbar">
+            <ul>
+              <li><a href="">Home</a> </li>
+              <li><a href="">Online Applicaton</a> </li>
+              <li><a href="">Mock Test</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services </a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p id="delay">Due to Technical issues Registration for MTCE(MAIN)-2021 is Delayed</p>
+       <div class="container">
+           <!-- <div class="item" id="item1"> <a href="">View MTCE'S Result &nbsp; <span class="container">
+            <span class="class">New<span></a> 
+         <span>
+    </div>
+          <div class="item" id="item2"> <a href="">Download Rank Card &nbsp; <span class="container">
+            <span class="class">New<span></a>
+            
+            -->
+            <div class="item" id="item1"> <a href="/online Application.html" target="_blank">Register For MTCE(Main)-2021 &nbsp; <span class="container">
+                <span class="class">New<span></a> 
+             <span>
+        <span></div>
+       </div>
+       <h4 id="pavan">ABOUT&nbsp;TEST</h4> 
+       <div class="sw">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur deserunt libero ea asperiores sed aspernatur iste est maxime id veniam debitis reprehenderit consequatur, ducimus cumque explicabo? Hic itaque repudiandae assumenda reprehenderit animi? Laborum, soluta inventore. Voluptates, at. Nam reiciendis vel iusto assumenda ipsa porro, odio aut, architecto ratione aspernatur ma</p>
+          </div> 
+    </div>
+       <div class="last">&copy;Copyrights all reserved. <br>Designed&Hosted by Mock Arena. <br> Contents are provided by MTCE-2021 ADMINSTRATION </div>
+</body>
+</html>

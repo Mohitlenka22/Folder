@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+          border: 2px solid black;
+          width: 100%;
+          height: 644px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-evenly;
+
+
+        }
+        .box{
+            display: inline-block;
+            height: 20px;
+            /* height: 20px;
+            width: 70px; */
+            border: 2px solid red;
+            margin: 70px;        
+        }
+       div a{
+           text-decoration: none;
+       }
+
+
+    </style>
+</head>
+<body>
+            <div class="container">
+        <div class="box" id="box4"> <a href="">This is first heading</a>  </div>
+        <div class="box" id="box4"><a href="">This is second heading</a></div>
+        
+    </div>
+    
+</body>
+</html>
