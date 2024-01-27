@@ -1,0 +1,20 @@
+we tend to use recursion when there we need to
+--> Try all possible ways to figure out the output
+
+Recursion is always a Top-down approach 
+
+-->try to represent the problem interms of array indexes
+-->Do all possible stuffs on that index.
+-->now, get 1.count all possible ways or 2. maximum or minimum.
+
+
+Overlapping subproblems -> the sub-problem which pre-computed and computing again then there are called overlapping subproblems / function call overheads
+
+--> If, we found overlapping subproblems in recursion there
+-->Then, apply memoization(top-down approach) and then Tabulation(bottom-up approach)
+
+convertion of recursion into dp:
+1. declare a dp array whose dimesions depend on the parameters changing
+2. Before calling subproblem check whether that is computed or it.
+3. with return then result, also store it into dp array.
+ 

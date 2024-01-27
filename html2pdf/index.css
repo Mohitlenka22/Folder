@@ -1,0 +1,7 @@
+#pdf {
+    text-align: center;
+}
+#pdf > h1 {
+    background-color: blue;
+    color: #fff;
+}
