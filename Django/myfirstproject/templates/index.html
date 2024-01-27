@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mypage</title>
+    <style>
+        .h1{
+            color: blue;
+        }
+        .e2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = 'new' class="e2 h1">HEllo</h1>
+</body>
+ <script >
+     /* <!-- for(let a of list){
+         console.log(a);
+        } --> */
+        let doc = document.querySelector('#new');
+        doc.addEventListener('click', ()=>{
+        doc.classList.toggle('h1');
+    });
+ </script>
+
+</html>

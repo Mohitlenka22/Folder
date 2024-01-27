@@ -1,0 +1,1 @@
+this awesome django project for beginners.

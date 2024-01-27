@@ -1,0 +1,1 @@
+db.result.insertMany({Name:"Mohit",Marks:90},{Name:"Swaroop",Marks:80})

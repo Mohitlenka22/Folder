@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    /* @media only screen and (max-width:940px) {
+        *{
+            width:100%;
+        }
+    }
+    */
+    nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px gray,0 0 4px gray,0 0 4px gray,0 0 4px gray;
+    box-sizing: border-box;
+    position: relative;
+    left: 25em;
+    top: -2em;
+    width: 35%;
+    height: 2em;
+}
+nav li  {
+    list-style: none;
+    padding: 23px;
+
+}
+nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom: 1em;
+    color: blue;
+}
+nav li a:hover{
+    color: black;
+}
+h3{ color: red;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+body{
+    background-image: url(/img.jpg);
+    background-repeat: no-repeat;
+    background-size: 66px;
+    background-position-x: 30em;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat (6,2fr 1fr 1fr );
+    grid-column-gap: 6px;
+    
+}
+.container{
+    border: 2px solid blue;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 0px gray,0 0 0px gray,0 0 0px gray,0 0 0px gray;
+    height: 28em;
+    width: 90%;
+    position: relative;
+    left: 8em;
+
+}
+a{
+    text-decoration: none;
+}
+#pav {
+    position: relative;
+    left: 83em;
+    top: -4em;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.main{
+    position: relative;
+    left: 64em;
+    top: -2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.container1{
+            box-shadow: 0 0 4px gray, 0 0 4px gray, 0 0 4px gray, 0 0 4px gray;
+            height: 12em;
+            width: 35%;
+            margin: auto;
+            position: relative;
+            top: 6em;
+            padding: 23px;
+            border-radius: 6px;
+            margin: auto;
+        }
+        input[type="text"]{
+            position: relative;
+            top: -5em;
+            left: 7em;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 6px;
+        }
+        input[type="date"]{
+            position: relative;
+            left: -6.5em;
+            top: -1em;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 6px;
+        } 
+       button{
+           position: relative;
+           right: 15em;
+           top: 3em;
+           border-radius: 4px;
+           cursor: pointer;
+           font-weight: bold;
+            padding: 3px;
+            font-family: Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif;
+       }
+       h4{
+           position: relative;
+            bottom: 1.5em;
+            left: 6em;
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* border-bottom: 2px solid gray; */
+            width: 46%;
+
+       }
+       button:hover{
+           color: white;
+           background-color: blue;
+
+       }
+
+     </style>
+</head>
+<body>
+    <h3>Draco(Con-Des)</h3>
+    <div class="main">Session Id: &nbsp;&nbsp;&nbsp;</div>
+    <button id="pav"></button>
+    <header>
+        <nav>
+           <li> <a href="/home">Home</a> </li>
+           <li><a href="/about">About</a> </li>
+           <li> <a href="/services">Services</a></li>
+           <li><a href="/contact">Contact</a></li>
+        </nav>
+    </header>
+   <div>
+      <div class="container1">
+        <h4>NETCET-2021 Results</h4>
+        <form action="/">
+            <input type="text" name="Hall Ticket No." placeholder="Hall Ticket No.">
+            <input type="date" name="dob" placeholder="DOB" id="">
+            <button>Submit</button>
+        </form>
+    </div>
+   </div>
+   <script>
+       let a =1000000;
+       let b =9999999;
+       let r = a + (b-a)*Math.random()
+       let pav =document.getElementById('pav').innerHTML=Math.floor(r);
+
+   </script>
+</body>
+</html>

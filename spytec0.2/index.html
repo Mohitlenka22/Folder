@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch</title>
+    <link href="http://fonts.cdnfonts.com/css/samsung-sharp-sans" rel="stylesheet">
+    <style>
+        p.title {
+            font-size: 5.6rem;
+            text-align: center;
+            line-height: 1;
+            color: #c6e2ff;
+            animation: neon .08s ease-in-out infinite alternate;
+        }
+        
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34), 0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78), 0 0 54px rgba(30, 132, 242, 0.92);
+            }
+            to {
+                text-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58), 0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88), 0 0 60px rgba(30, 132, 242, 1);
+            }
+        }
+        
+        .text1 {
+            display: inline-block;
+            position: relative;
+            color: #0087ca;
+        }
+        
+        .text1:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0087ca;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        
+        .text1:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        
+        p.text1 {
+            color: white;
+            font-family: 'Samsung Sharp Sans', bold;
+            display: inline-block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 15pt;
+        }
+        
+        p.title {
+            color: white;
+            font-family: 'Samsung Sharp Sans', bold;
+            font-size: 30pt;
+            font-weight: bold;
+            text-align: center;
+            position: relative;
+            top:5em;
+        }
+        .image{
+            /* margin-top: -4em; */
+            background-image: url('https://images.unsplash.com/photo-1524805444758-089113d48a6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80');
+            /* background-size: 100%; */
+            height: 250%;
+            width: 30%;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        .center{
+            display: grid;
+            opacity: 0.7  ;
+            place-items: center;
+            position: relative;
+            top:8em;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:#110036 ;">
+    <div class='text'>
+        <a href="#">
+            <p class="text1">HOME</p>
+        </a>
+        <a href="#">
+            <p class="text1">SHOP</p>
+        </a>
+
+        <a href="#">
+            <p class="text1">SALE</p>
+        </a>
+
+        <a href="#">
+            <p class="text1">PRICING</p>
+        </a>
+    </div>
+    <div class="center">
+        <div class="image">
+            <p class="title">Smart Watch You<br> Should Wear Every Day</p>
+        </div>
+    </div>
+</body>
+
+</html>
